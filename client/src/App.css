@@ -1,0 +1,140 @@
+#root {
+  min-height: 100vh;
+}
+
+main {
+  width: min(100% - 48px, 1120px);
+  margin: 0 auto;
+}
+
+header {
+  min-height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e2dc;
+}
+
+header > a {
+  color: #25251f;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  color: #55554e;
+  text-decoration: none;
+}
+
+.hero {
+  max-width: 760px;
+  padding: 112px 0 96px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+}
+
+.hero p {
+  margin: 24px 0 32px;
+  color: #66665e;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.button {
+  display: inline-flex;
+  padding: 14px 22px;
+  border-radius: 999px;
+  background: #25251f;
+  color: white;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #525248;
+}
+
+.product-section {
+  padding: 24px 0 96px;
+}
+
+.eyebrow,
+.product-category {
+  color: #77766e;
+  font-size: 0.875rem;
+}
+
+.product-section h2 {
+  margin: 8px 0 24px;
+  font-size: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.product-art {
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+}
+
+.product-art span {
+  font-size: 4rem;
+}
+
+.product-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.product-details h3,
+.product-details p {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  main {
+    width: min(100% - 32px, 1120px);
+  }
+
+  .hero {
+    padding: 80px 0 64px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.add-button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px 16px;
+  border: 1px solid #25251f;
+  border-radius: 999px;
+  background: transparent;
+  color: #25251f;
+  font: inherit;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background: #25251f;
+  color: white;
+}
