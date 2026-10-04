@@ -32,6 +32,7 @@ nav a {
   text-decoration: none;
 }
 
+
 .hero {
   max-width: 760px;
   padding: 112px 0 96px;
@@ -61,7 +62,7 @@ nav a {
 }
 
 .button:hover {
-  background: #525248;
+  background: #c33201;
 }
 
 .product-section {
@@ -137,4 +138,102 @@ nav a {
 .add-button:hover {
   background: #25251f;
   color: white;
+}
+
+.cart-section {
+  max-width: 680px;
+  padding: 48px 0 96px;
+  border-top: 1px solid #e5e2dc;
+}
+
+.cart-section h2 {
+  margin: 8px 0 24px;
+  font-size: 2rem;
+}
+
+.cart-list {
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #e5e2dc;
+}
+
+.cart-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #e5e2dc;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.remove-button {
+  border: 0;
+  background: transparent;
+  color: #77766e;
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  color: #25251f;
+}
+
+.cart-row-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cart-product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cart-product-info small {
+  color: #77766e;
+}
+
+.quantity-control {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #e5b800;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.quantity-control button {
+  width: 34px;
+  height: 32px;
+  border: 0;
+  background: white;
+  font: inherit;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.quantity-control button:hover:not(:disabled) {
+  background: #f4f1e7;
+}
+
+.quantity-control button:disabled {
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.quantity-control span {
+  min-width: 36px;
+  text-align: center;
+}
+
+.quantity-control button svg {
+  display: block;
+  margin: 0 auto;
 }
